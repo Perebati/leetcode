@@ -1,3 +1,5 @@
+//Link: https://leetcode.com/problems/valid-sudoku/
+
 struct hash_pair {
     size_t operator()(const pair<int, int>& p) const {
         return hash<int>()(p.first) ^ (hash<int>()(p.second) << 4);
